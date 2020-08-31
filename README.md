@@ -1,5 +1,7 @@
+# Class Notes - Fall 2020 - Intro to Programming
+Contact: Mark Sherman <shermanm@emmanuel.edu>
 
-********** August 26,2020 **********
+## August 26,2020
 
 Library: p5.js
 
@@ -27,7 +29,7 @@ Coordinate system:
 	x,y
 
 
-********** August 31, 2020 **********
+## August 31, 2020
 
 functions
 	collections of code that can be called (run)
@@ -79,6 +81,7 @@ VARIABLE
 		!= not equal to
 		
 https://p5js.org/reference/
+
 www.w3schools.com
 
 Expression
