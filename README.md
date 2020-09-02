@@ -94,4 +94,95 @@ Expression
 	if (something that must resolve to true or false)
 	
 	can resolve to a value
+
+[whiteboard 2](Whiteboard[2]-01.png)
+
+[whiteboard 3](Whiteboard[3]-01.png)
+	
+## September 2
+<https://integrity.mit.edu/handbook/writing-code>
+
+Comparators to compare values
+"is the value of the variable x equal to 2?"  
+	x === 2
+"is temperature lower than 60?"
+	temperature < 60
+	
+"is temperature lower than 60 or is it raining?"
+
+	let temperature = 76;
+	let raining = true;
+	
+	if (temperature < 60 ||	raining === true) {
+		wearJacket();
+	}
+
+Logical Operators: 
+	&& 	and		[thingA] && [thingB] ===> t/f
+	|| 	or 		[thingA] || [thingB] ===> t/f
+	
+	!	not		![thing] ===> t/f (opposite of thing)
+	
+[whiteboard 4](Whiteboard[4]-01.png)
+
+Logical Primitives:
+	true
+	false
+
+Expressions: 
+	variable name: returns the value in that variable
+	assignment operator: returns nothing (undefined)
+	
+	if ("red") {
+		wearJacket();
+	}
+
+Truthiness
+	any value can be interpreted as true or false
+	'if' will always TRY to interpret what you give it as t/f
+	
+	undefined is falsy
+	0 is falsy
+	1 is truthy
+	strings are truthy
+
+Activity
+Context:
+
+	let x = 33;
+	let y = 22;
+	let z = 11;
+
+	1.	true && false				false	
+		
+	2.	x === 33			true
+		33 === 33
+	
+	3.	z != z		false
+	
+	4.	x === y + z			true
+		33 === 22 + 11
+		33 === 33
+	
+	5. 	x === y || x === y + z		true
+		false   || true 
+	
+	6. 	x || y			true
+		true || true
+		
+	
+	7.	x != y || x != x	true
+		true   || false
+		
+		x != y ---> true
+		x != x ---> false
+		
+
+	
+	
+	
+	
+	
+	
+	
 	 
