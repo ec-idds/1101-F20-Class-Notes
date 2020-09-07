@@ -1,7 +1,7 @@
 # Class Notes - Fall 2020 - Intro to Programming
 Contact: Mark Sherman <shermanm@emmanuel.edu>
 
-## August 26,2020
+# August 26,2020
 
 Library: p5.js
 
@@ -29,7 +29,7 @@ Coordinate system:
 	x,y
 
 
-## August 31, 2020
+# August 31, 2020
 
 functions
 	collections of code that can be called (run)
@@ -95,11 +95,11 @@ Expression
 	
 	can resolve to a value
 
-[whiteboard 2](Whiteboard[2]-01.png)
+[the p5 loop, setup and draw](Whiteboard[2]-01.png)
 
-[whiteboard 3](Whiteboard[3]-01.png)
+[flow for IF and IF/ELSE](Whiteboard[3]-01.png)
 	
-## September 2
+# September 2
 <https://integrity.mit.edu/handbook/writing-code>
 
 Comparators to compare values
@@ -123,7 +123,7 @@ Logical Operators:
 	
 	!	not		![thing] ===> t/f (opposite of thing)
 	
-[whiteboard 4](Whiteboard[4]-01.png)
+[Truth Tables for OR and AND](Whiteboard[4]-01.png)
 
 Logical Primitives:
 	true
