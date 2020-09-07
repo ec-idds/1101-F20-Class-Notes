@@ -177,9 +177,17 @@ Context:
 		x != y ---> true
 		x != x ---> false
 		
+# September 7, 2020
 
+Uncaught SyntaxError: missing ) after argument list	sketch.js:17:16
+
+JavasScript treats single quotes and double quotes the same:
 	
+	let mySingleQuotedString = 'hello';
+	let myDoubleQuotedString = "hello";
 	
+	both are valid!
+
 	
 	
 	
