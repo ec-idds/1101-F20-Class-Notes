@@ -189,8 +189,23 @@ JavasScript treats single quotes and double quotes the same:
 	both are valid!
 
 	
+# September 9, 2020
+
+JavaScript Style Conventions: https://www.w3schools.com/js/js_conventions.asp
+These are rules we'll follow for our style.
+
+We spent the majority of class doing exercises in compound conditional statements. Whitboard shots are below.
+
+JavaScript uses this same process to parse ALL of the language, not just conditionals!
+
+Operator Precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 	
-	
-	
-	
-	 
+Examples (whiteboard, click to see image):
+
+[`temp < 65 || raining === true`](Whiteboard-2020-09-03-1.png)
+
+[`true && false || true && true`](Whiteboard-2020-09-03-2.png)
+
+[`dogs <= 2 === false || bikes > 1`](Whiteboard-2020-09-03-3.png)
+
+[`mouseX > width / 2 && mouseY < height / 2`](Whiteboard-2020-09-03-4.png)
