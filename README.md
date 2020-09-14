@@ -244,6 +244,9 @@ and how to use conditionals to manipulate them.
 let ballX = 0;
 let ballY = 0;
 let moveRight = true;
+
+// is not a state variable, in that we don't use it to maintain the state of the program
+// but it is still a variable that's representing a value with a name for more clarity. 
 let ballSize;
 
 function setup() {
