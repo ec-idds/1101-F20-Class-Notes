@@ -209,3 +209,71 @@ Examples (whiteboard, click to see image):
 [`dogs <= 2 === false || bikes > 1`](Whiteboard-2020-09-03-3.png)
 
 [`mouseX > width / 2 && mouseY < height / 2`](Whiteboard-2020-09-03-4.png)
+
+# Monday 14 September 2020
+
+* Starting Ch. 5 in the MAKE book
+
+	* basics of p5
+	* variables 
+	* logic and conditionals 
+
+* "Responsive"
+* Falling Rock Parts 1 & 2
+	* "Abstraction"
+
+* What is abstraction? 
+	* "concrete" as an opposite for "abstract"
+	* abstract has no physical form
+	* about conveying ideas and feelings more so than an actual image
+	* ⬆️ mostly about art
+	
+* Abstraction in Computer Science
+	* way to deal detail 
+	* "abstract" as a verb - details can be "abstracted away"
+	* "abstraction barrier" - a definitive junction between layers of abstraction
+	* one abstraction barrier is p5 library. 
+	* the Falling Rock assignment set uses an abstraction of the rock's altitude.
+	
+Made a ball bounce on the screen by talking about *state variables*
+
+and how to use conditionals to manipulate them. 
+
+```javascript
+// State Variables
+let ballX = 0;
+let ballY = 0;
+let moveRight = true;
+let ballSize;
+
+function setup() {
+  createCanvas(400, 400);
+  fill("purple");
+  stroke("gold");
+  strokeWeight(4);
+  ballY = height / 2;
+  ballSize = width / 4;
+}
+
+function draw() {
+  print(ballX, ballY);
+  background(150);
+  ellipse(ballX, ballY, ballSize, ballSize);
+  
+  if(moveRight === true) {
+    ballX = ballX + 1;
+  } else {
+    ballX = ballX - 1;
+  }
+  
+  if(ballX >= width - ballSize / 2) {
+    moveRight = false;
+    print("FLIPPING THE SWITCH!");
+  }
+  
+  if(ballX <= 0 + ballSize / 2) {
+    moveRight = true;
+    print("FLIPPING THE SWITCH!");
+  }
+}
+```
