@@ -280,3 +280,78 @@ function draw() {
   }
 }
 ```
+
+# Wednesday 16 September 2020
+
+* Variable "Scope" - where a variable is visible/usable
+	* Global - variables are created outside of any functions or other code blocks
+	* Local - variables are created in, and only accessible in, a particular function
+		* only exist in the body they're created in
+		* only exist DURING THE CALL they're created in
+		* ==> these variables don't remeber anything between function calls
+
+I'm skipping Example 5.7 you can do that on your own
+
+Some shorthand operators:
+
+    x += n
+    x = x + n
+  
+    x++
+    x += 1
+    x = x + 1
+ 
+    x-- 
+    x -= 1
+    x = x - 1
+
+We found a fun logic error, where this code had a bug:
+
+    if (keyIsPressed && key == 'c' || key == 'a') {
+      fill('red');
+    } else {
+      fill('blue');
+    }
+	
+the solution was to add grouping parenthesis around the latter two expressions to make sure the OR was evaluated as one unit,  prior to being AND'ed with keyIsPressed. [Here is the whiteboard about that](Whiteboard-2020-09-16.png)
+
+Then we introduced `keyCode` which is different than `key` but serves the same purpose to report keyboard info. `keyCode` gives you access to keys that don't have face characters, like the arrow keys, shown below. Make sure you look at the [reference page for keyCode](https://p5js.org/reference/#/p5/keyCode) when you go to use it!
+
+Here's the code we ended up with:
+
+```javascript
+let x;
+let y;
+
+function setup() {
+  createCanvas(400, 400);
+  x = width / 2;
+  y = height / 2;
+}
+
+function draw() {
+  background(180);
+  text('Press Space to Change Color');
+  
+  if(keyIsPressed && keyCode == LEFT_ARROW) {
+    x--;
+  }
+  
+  if(keyIsPressed && keyCode == RIGHT_ARROW) {
+    x++;
+  }
+  
+  if (keyIsPressed && (key == 'c' || key == ' ')) {
+    fill('red');
+  } else {
+    fill('blue');
+  }
+
+  ellipse (x, y, 200);
+  
+  if (keyIsPressed) {
+    text(key, 300, 300);
+  }
+}
+```
+I recommend you play with this, possibly with editor.p5js.org. Try to add the up and down arrows!
