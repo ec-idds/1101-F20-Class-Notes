@@ -355,3 +355,57 @@ function draw() {
 }
 ```
 I recommend you play with this, possibly with editor.p5js.org. Try to add the up and down arrows!
+
+# Thursday 21 September 2020
+
+# Wednesday 23 September 2020
+
+Starting Chapter 6!
+
+THINGS DON'T GET WRITTEN LINEARLY
+
+	/* Example 6-7 */
+
+	var angle = 0.2;
+	var angleDirection = 1;
+	var speed = 0.005;
+
+	function setup() {
+	  createCanvas(120, 120);
+	}
+
+	function draw() {
+	  background(204);
+  
+	  stroke('black');
+	  translate(20, 25);
+	  rotate(angle);
+	  drawAxis();
+	  strokeWeight(12);
+	  line(0, 0, 40, 0);
+  
+	  translate(40, 0);
+	  stroke('red');
+	  rotate(angle * 2.0);
+	  drawAxis();
+	  strokeWeight(6);
+	  line(0, 0, 30, 0);
+  
+	  translate(30, 0);
+	  stroke('blue');
+	  rotate(angle * 2.5);
+	  drawAxis();
+	  strokeWeight(3);
+	  line(0, 0, 20, 0);
+  
+	  angle += speed * angleDirection;
+	  if ((angle > QUARTER_PI) || (angle < 0)) {
+	    angleDirection *= -1;
+	  }
+	}
+
+	function drawAxis() {
+	  strokeWeight(0.5);
+	  line(-width, 0, width, 0);
+	  line(0, -height, 0, height);
+	}
