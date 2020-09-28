@@ -409,3 +409,18 @@ THINGS DON'T GET WRITTEN LINEARLY
 	  line(-width, 0, width, 0);
 	  line(0, -height, 0, height);
 	}
+
+# Monday 28 September
+Here's a bunch of whiteboards.
+
+[Whiteboard 1](2020-09-28/Whiteboard1.png)
+
+[Whiteboard 2](2020-09-28/Whiteboard2.png)
+
+[Whiteboard 3](2020-09-28/Whiteboard3.png)
+
+[Whiteboard 4](2020-09-28/Whiteboard4.png)
+
+[Whiteboard 5](2020-09-28/Whiteboard5.png)
+
+[Whiteboard 6](2020-09-28/Whiteboard6.png)
