@@ -424,3 +424,8 @@ Here's a bunch of whiteboards.
 [Whiteboard 5](2020-09-28/Whiteboard5.png)
 
 [Whiteboard 6](2020-09-28/Whiteboard6.png)
+
+# Wednesday 30 September
+We worked in groups on Loop Exercises. Here it is, all cleaned up. 
+
+[C2 Loop Exercises.pdf](C2_Loop_Exercises.pdf)
