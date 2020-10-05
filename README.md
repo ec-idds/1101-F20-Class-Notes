@@ -429,3 +429,30 @@ Here's a bunch of whiteboards.
 We worked in groups on Loop Exercises. Here it is, all cleaned up. 
 
 [C2 Loop Exercises.pdf](C2_Loop_Exercises.pdf)
+
+# Monday 05 October
+Reviewed homeworks:
+
+- Falling Rock (pts 1, 2, and bonus)
+- Emoji Wars
+
+Whiteboard:
+
+[Falling Rock Jet Pack 1](Whiteboard1.png)
+
+[Falling Rock Jet Pack 2](Whiteboard3.png)
+
+[with the offset for Emoji Wars](Whiteboard4.png)
+
+
+Started Task 4 from the above Loop Exercises. Here's the new trick (which we'll expand on Wednesday): 
+
+NESTED LOOPS
+
+```javascript
+for(let j = 0; j < 3; j++){
+  for(let i = 0; i < 3; i++){
+    ellipse(i * 30, j * 30, 20);
+  }
+}
+```
