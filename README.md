@@ -456,3 +456,42 @@ for(let j = 0; j < 3; j++){
   }
 }
 ```
+
+# Wednesday 7 October
+
+More work on NESTED LOOPS. We hand-executed a single loop program to draw a row of circles. Then we created a double-loop, a *nested loop*, and executed that by hand. 
+
+Some tricks to nested loops:
+
+- There is an *inner* and *outer* loop. The Outer loop runs first, and the inner loop is inside the body of the outer loop.
+
+- When the inner loop starts, it runs to completion before we return to the outer loop
+
+- When the inner loop is completely done, meaning it got "false" for its conditional check, we then proceed with the rest of the outer loop's body. If there isn't any more body, we jump back into the outer loop's flow chart at the end of the body. 
+
+- The outer loop increments its counter, checks its conditional, and if the conditional is still true, goes into its body, just like usual. 
+
+- When we enter the body of the outer loop a second (or subsequent) time, the inner loop is like a NEW loop to the computer, and it starts over with the initialization/setup expression, which usually sets its counter back to zero. Then it runs in its entirety again. 
+
+[Tracing the Single loop](2020-10-07/Whiteboard1.png)
+
+[Tracing the Double loop](2020-10-07/Whiteboard2.png)
+
+[Trying to make the middle circle not print (doesn't quite work)](2020-10-07/Whiteboard3.png)
+
+```javascript
+function setup() {
+  createCanvas(300, 300);
+}
+
+function draw() {
+  background(220);
+  translate(50, 50); // just so we can see it all on the canvas
+
+  for(let j = 0; j < 3; j++) {
+    for(let i = 0; i < 3; i++) {
+      ellipse(i * 30, j * 30, 20);
+    }
+  }
+}
+```
