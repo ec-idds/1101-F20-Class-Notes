@@ -495,3 +495,41 @@ function draw() {
   }
 }
 ```
+
+# Monday 12 October 
+
+Reviewed the Falling Rock jetpacks, Emoji Wars, and Pinwheels. 
+
+Started on a new topic: arrays
+
+The most critical pieces are on these two slides:
+
+[Introduction to Arrays](2020-10-12/Whiteboard1.png)
+
+[Cool things about arrays](2020-10-12/Whiteboard2.png)
+
+We started trying these ideas with the following example, that rotates colors whenever the mouse is clicked. (I tweaked it a little bit after class to fix a bug)
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+let colorIndex = 0;
+let myColors = ['red', 'green', 'blue', 'yellow', 'pink'];
+
+function draw() {
+  background(220);
+  
+  fill(myColors[colorIndex]);
+  ellipse(width / 2, height / 2, width, height);
+}
+
+function mouseClicked() {
+  colorIndex++;
+  if (colorIndex >= myColors.length) {
+    colorIndex = 0;
+  }
+  print(colorIndex)
+}
+```
