@@ -95,9 +95,9 @@ Expression
 	
 	can resolve to a value
 
-[the p5 loop, setup and draw](Whiteboard[2]-01.png)
+[the p5 loop, setup and draw](2020-08-31/Whiteboard02.png)
 
-[flow for IF and IF/ELSE](Whiteboard[3]-01.png)
+[flow for IF and IF/ELSE](2020-08-31/Whiteboard03.png)
 	
 # September 2
 <https://integrity.mit.edu/handbook/writing-code>
@@ -123,7 +123,7 @@ Logical Operators:
 	
 	!	not		![thing] ===> t/f (opposite of thing)
 	
-[Truth Tables for OR and AND](Whiteboard[4]-01.png)
+[Truth Tables for OR and AND](2020-09-02/Whiteboard04.png)
 
 Logical Primitives:
 	true
@@ -202,13 +202,13 @@ Operator Precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 	
 Examples (whiteboard, click to see image):
 
-[`temp < 65 || raining === true`](Whiteboard-2020-09-03-1.png)
+[`temp < 65 || raining === true`](2020-09-09/Whiteboard-2020-09-03-1.png)
 
-[`true && false || true && true`](Whiteboard-2020-09-03-2.png)
+[`true && false || true && true`](2020-09-09/Whiteboard-2020-09-03-2.png)
 
-[`dogs <= 2 === false || bikes > 1`](Whiteboard-2020-09-03-3.png)
+[`dogs <= 2 === false || bikes > 1`](2020-09-09/Whiteboard-2020-09-03-3.png)
 
-[`mouseX > width / 2 && mouseY < height / 2`](Whiteboard-2020-09-03-4.png)
+[`mouseX > width / 2 && mouseY < height / 2`](2020-09-09/Whiteboard-2020-09-03-4.png)
 
 # Monday 14 September 2020
 
@@ -313,7 +313,7 @@ We found a fun logic error, where this code had a bug:
       fill('blue');
     }
 	
-the solution was to add grouping parenthesis around the latter two expressions to make sure the OR was evaluated as one unit,  prior to being AND'ed with keyIsPressed. [Here is the whiteboard about that](Whiteboard-2020-09-16.png)
+the solution was to add grouping parenthesis around the latter two expressions to make sure the OR was evaluated as one unit,  prior to being AND'ed with keyIsPressed. [Here is the whiteboard about that](2020-09-16/Whiteboard-2020-09-16.png)
 
 Then we introduced `keyCode` which is different than `key` but serves the same purpose to report keyboard info. `keyCode` gives you access to keys that don't have face characters, like the arrow keys, shown below. Make sure you look at the [reference page for keyCode](https://p5js.org/reference/#/p5/keyCode) when you go to use it!
 
@@ -438,11 +438,11 @@ Reviewed homeworks:
 
 Whiteboard:
 
-[Falling Rock Jet Pack 1](Whiteboard1.png)
+[Falling Rock Jet Pack 1](2020-10-05/Whiteboard1.png)
 
-[Falling Rock Jet Pack 2](Whiteboard3.png)
+[Falling Rock Jet Pack 2](2020-10-05/Whiteboard3.png)
 
-[with the offset for Emoji Wars](Whiteboard4.png)
+[with the offset for Emoji Wars](2020-10-05/Whiteboard4.png)
 
 
 Started Task 4 from the above Loop Exercises. Here's the new trick (which we'll expand on Wednesday): 
