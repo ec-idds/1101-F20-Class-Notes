@@ -533,3 +533,62 @@ function mouseClicked() {
   print(colorIndex)
 }
 ```
+
+# Wednesday 14 October
+
+p5 reference, as you know, is https://p5js.org/reference/
+
+for the language itself, javascript reference is here https://www.w3schools.com/jsref/
+
+### Looping over Arrays
+
+[looping over an array](2020-10-14/Screenshot1.png)
+
+```javascript
+let myArray = ['red', 'green', 'blue', 'pink', 'yellow'];
+
+function setup() {
+  createCanvas(800, 400);
+  noStroke();
+  
+  for(let i = 0; i < myArray.length; i++) {    
+    fill(myArray[i]);
+    rect(100 * i, 100, 75, 75);
+  }
+}
+```
+
+[arrays are mutable](2020-10-14/Whiteboard01.png)
+
+[arrays are expandable](2020-10-14/Whiteboard02.png)
+
+```javascript
+let myArray = [];
+
+function setup() {
+  createCanvas(800, 400);
+  noStroke();
+  
+  for(let i = 0; i < 100; i++){
+    myArray.push(i + 1);
+  }
+  
+  for(let i = 0; i < myArray.length; i++){
+    if(myArray[i] % 2 !== 0){
+      print(myArray[i]);
+    }
+  }
+}
+```
+
+### Understanding nested function calls:
+
+* I accidentally had all of your faces in front of the screenshot, so I had to re-do it
+* [The first screenshot](2020-10-14/Screenshot2.png)
+* [The Re-Do](2020-10-14/Whiteboard03.png)
+
+### Odd and Even
+
+[Introducing Modulus](2020-10-14/Whiteboard04.png)
+
+[Even Detector Expression](2020-10-14/Whiteboard05.png)
