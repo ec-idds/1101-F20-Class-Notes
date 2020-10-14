@@ -1,0 +1,5 @@
+#!/bin/bash
+# https://github.com/ekalinin/github-markdown-toc
+./lib/gh-md-toc --insert README.md
+rm -fv *.orig.*
+rm -fv *.toc.*

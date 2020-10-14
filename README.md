@@ -38,7 +38,7 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Understanding nested function calls:](#understanding-nested-function-calls)
       * [Odd and Even](#odd-and-even)
 
-<!-- Added by: shermanm, at: Wed Oct 14 16:31:44 EDT 2020 -->
+<!-- Added by: shermanm, at: Wed Oct 14 16:46:32 EDT 2020 -->
 
 <!--te-->
 
