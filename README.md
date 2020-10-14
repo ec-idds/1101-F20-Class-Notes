@@ -1,6 +1,31 @@
 # Class Notes - Fall 2020 - Intro to Programming
 Contact: Mark Sherman <shermanm@emmanuel.edu>
 
+<!--ts-->
+   * [Class Notes - Fall 2020 - Intro to Programming](#class-notes---fall-2020---intro-to-programming)
+   * [August 26,2020](#august-262020)
+   * [August 31, 2020](#august-31-2020)
+   * [September 2](#september-2)
+   * [September 7, 2020](#september-7-2020)
+   * [September 9, 2020](#september-9-2020)
+   * [Monday 14 September 2020](#monday-14-september-2020)
+   * [Wednesday 16 September 2020](#wednesday-16-september-2020)
+   * [Thursday 21 September 2020](#thursday-21-september-2020)
+   * [Wednesday 23 September 2020](#wednesday-23-september-2020)
+   * [Monday 28 September](#monday-28-september)
+   * [Wednesday 30 September](#wednesday-30-september)
+   * [Monday 05 October](#monday-05-october)
+   * [Wednesday 7 October](#wednesday-7-october)
+   * [Monday 12 October](#monday-12-october)
+   * [Wednesday 14 October](#wednesday-14-october)
+         * [Looping over Arrays](#looping-over-arrays)
+         * [Understanding nested function calls:](#understanding-nested-function-calls)
+         * [Odd and Even](#odd-and-even)
+
+<!-- Added by: shermanm, at: Wed Oct 14 15:57:46 EDT 2020 -->
+
+<!--te-->
+
 # August 26,2020
 
 Library: p5.js
@@ -22,7 +47,7 @@ the parenthesis are what make it a function CALL
 ; semicolon ends an expression
 	technically, in javascript, they SEPARATE expressions
 	
-Coordinate system:
+## Coordinate system
 	0,0 is in the upper-right corner
 	x moves left
 	y moves down
@@ -31,13 +56,13 @@ Coordinate system:
 
 # August 31, 2020
 
-functions
+## functions
 	collections of code that can be called (run)
 	a function must be DEFINED
 	to call a function, name()
 	pass parameters to the function in the parens goFunction(2, true)
 	
-IF if/else "conditional"
+## IF if/else "conditional"
 
 	if (condition) {
 		body if true
@@ -51,7 +76,7 @@ IF if/else "conditional"
 	
 	a condition statement is an expression that resolves to true or false
 
-VARIABLE
+## VARIABLE
 
 	name, contain (refer to) a value, declared before they can be used
 	
@@ -84,7 +109,7 @@ https://p5js.org/reference/
 
 www.w3schools.com
 
-Expression
+## Expression
 	a piece of code
 	let x = 5;
 	expressions can be built out of other expressions
@@ -102,7 +127,7 @@ Expression
 # September 2
 <https://integrity.mit.edu/handbook/writing-code>
 
-Comparators to compare values
+## Comparators to compare values
 "is the value of the variable x equal to 2?"  
 	x === 2
 "is temperature lower than 60?"
@@ -117,7 +142,7 @@ Comparators to compare values
 		wearJacket();
 	}
 
-Logical Operators: 
+## Logical Operators
 	&& 	and		[thingA] && [thingB] ===> t/f
 	|| 	or 		[thingA] || [thingB] ===> t/f
 	
@@ -194,12 +219,16 @@ JavasScript treats single quotes and double quotes the same:
 JavaScript Style Conventions: https://www.w3schools.com/js/js_conventions.asp
 These are rules we'll follow for our style.
 
-We spent the majority of class doing exercises in compound conditional statements. Whitboard shots are below.
+We spent the majority of class doing exercises in compound conditional statements. Whiteboard shots are below.
 
 JavaScript uses this same process to parse ALL of the language, not just conditionals!
 
+## Operator Precedence
+
 Operator Precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 	
+## Logic Practice
+
 Examples (whiteboard, click to see image):
 
 [`temp < 65 || raining === true`](2020-09-09/Whiteboard-2020-09-03-1.png)
@@ -212,7 +241,7 @@ Examples (whiteboard, click to see image):
 
 # Monday 14 September 2020
 
-* Starting Ch. 5 in the MAKE book
+## Starting Ch. 5 in the MAKE book
 
 	* basics of p5
 	* variables 
@@ -222,7 +251,7 @@ Examples (whiteboard, click to see image):
 * Falling Rock Parts 1 & 2
 	* "Abstraction"
 
-* What is abstraction? 
+## What is abstraction? 
 	* "concrete" as an opposite for "abstract"
 	* abstract has no physical form
 	* about conveying ideas and feelings more so than an actual image
@@ -283,12 +312,13 @@ function draw() {
 
 # Wednesday 16 September 2020
 
-* Variable "Scope" - where a variable is visible/usable
-	* Global - variables are created outside of any functions or other code blocks
-	* Local - variables are created in, and only accessible in, a particular function
-		* only exist in the body they're created in
-		* only exist DURING THE CALL they're created in
-		* ==> these variables don't remeber anything between function calls
+##  Variable "Scope" 
+* Scope is where a variable is visible/usable
+* Global - variables are created outside of any functions or other code blocks
+* Local - variables are created in, and only accessible in, a particular function
+	* only exist in the body they're created in
+	* only exist DURING THE CALL they're created in
+	* ==> these variables don't remeber anything between function calls
 
 I'm skipping Example 5.7 you can do that on your own
 
@@ -314,6 +344,8 @@ We found a fun logic error, where this code had a bug:
     }
 	
 the solution was to add grouping parenthesis around the latter two expressions to make sure the OR was evaluated as one unit,  prior to being AND'ed with keyIsPressed. [Here is the whiteboard about that](2020-09-16/Whiteboard-2020-09-16.png)
+
+## keyCode
 
 Then we introduced `keyCode` which is different than `key` but serves the same purpose to report keyboard info. `keyCode` gives you access to keys that don't have face characters, like the arrow keys, shown below. Make sure you look at the [reference page for keyCode](https://p5js.org/reference/#/p5/keyCode) when you go to use it!
 
@@ -360,7 +392,7 @@ I recommend you play with this, possibly with editor.p5js.org. Try to add the up
 
 # Wednesday 23 September 2020
 
-Starting Chapter 6!
+## Starting Chapter 6!
 
 THINGS DON'T GET WRITTEN LINEARLY
 
@@ -447,7 +479,7 @@ Whiteboard:
 
 Started Task 4 from the above Loop Exercises. Here's the new trick (which we'll expand on Wednesday): 
 
-NESTED LOOPS
+## NESTED LOOPS
 
 ```javascript
 for(let j = 0; j < 3; j++){
@@ -500,7 +532,7 @@ function draw() {
 
 Reviewed the Falling Rock jetpacks, Emoji Wars, and Pinwheels. 
 
-Started on a new topic: arrays
+## Arrays
 
 The most critical pieces are on these two slides:
 
@@ -540,7 +572,7 @@ p5 reference, as you know, is https://p5js.org/reference/
 
 for the language itself, javascript reference is here https://www.w3schools.com/jsref/
 
-### Looping over Arrays
+## Looping over Arrays
 
 [looping over an array](2020-10-14/Screenshot1.png)
 
@@ -581,13 +613,13 @@ function setup() {
 }
 ```
 
-### Understanding nested function calls:
+## Understanding nested function calls:
 
 * I accidentally had all of your faces in front of the screenshot, so I had to re-do it
 * [The first screenshot](2020-10-14/Screenshot2.png)
 * [The Re-Do](2020-10-14/Whiteboard03.png)
 
-### Odd and Even
+## Odd and Even
 
 [Introducing Modulus](2020-10-14/Whiteboard04.png)
 
