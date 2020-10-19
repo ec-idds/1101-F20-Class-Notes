@@ -37,8 +37,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Looping over Arrays](#looping-over-arrays)
       * [Understanding nested function calls:](#understanding-nested-function-calls)
       * [Odd and Even](#odd-and-even)
+   * [Monday 19 October](#monday-19-october)
+      * [Functions: theory and practice](#functions-theory-and-practice)
 
-<!-- Added by: shermanm, at: Wed Oct 14 16:46:32 EDT 2020 -->
+<!-- Added by: shermanm, at: Mon Oct 19 15:01:48 EDT 2020 -->
 
 <!--te-->
 
@@ -640,3 +642,82 @@ function setup() {
 [Introducing Modulus](2020-10-14/Whiteboard04.png)
 
 [Even Detector Expression](2020-10-14/Whiteboard05.png)
+
+# Monday 19 October
+
+## Functions: theory and practice
+
+[One of our great abstractions](2020-10-19/Whiteboard[1]-01.png)
+
+[Why write a function?](2020-10-19/Whiteboard[3]-01.png)
+
+[Practical Function Advice](2020-10-19/Whiteboard[4]-01.png)
+
+We *refactored* the first robot to use functions. We gave it two parameters: a location to center the head on as x and y, and a headColor. 
+We then added some sick color transformations based on the position of the mouse to show off how much control we now have over the head unit.
+
+The code ended up looking like this:
+
+```javascript
+function head(x, y, headColor) {
+  // Antennae
+  // center was 276, 155
+  stroke(102);
+  line(x, y, x - 30, y - 43);   // Small
+  line(x, y, x + 30, y - 99);    // Tall
+  line(x, y, x + 66, y + 85);   // Medium
+
+  // rest of the head
+  fill(headColor);
+  ellipse(x, y, 45, 45);
+  fill(255);
+  ellipse(x + 12, y - 5, 14, 14);
+  fill(0);
+  ellipse(x + 12, y - 5, 3, 3);
+  fill(153);
+  ellipse(x - 13, y - 7, 5, 5);
+  ellipse(x + 20, y - 25, 4, 4);
+  ellipse(x + 29, y + 7, 3, 3);
+}
+
+function neck(x, y) {
+  // Neck
+  // original top point was 276, 162
+  stroke(102);                // Set stroke to gray
+  line(266, 257, x - 10, y);   // Left
+  line(276, 257, x, y);   // Middle
+  line(286, 257, x + 10, y);   // Right
+}
+
+function setup() {
+  createCanvas(720, 480);
+  strokeWeight(2);
+  ellipseMode(RADIUS);
+}
+
+function draw() {
+  background(204);
+
+  neck(276, 162);
+  // neck(mouseX, mouseY);
+
+  // Body
+  noStroke();                 // Disable stroke
+  fill(102);                  // Set fill to gray
+  ellipse(264, 377, 33, 33);  // Antigravity orb
+  fill(0);
+  rect(219, 257, 90, 120);
+  fill(102);
+  rect(219, 274, 90, 6);
+
+  // for(let i = 0; i < 8; i++) {
+  //   head(i * 90, 50, color(i*25, 0, 0));
+  // }
+
+  head(276, 155, color(mouseX, mouseY, 0));
+  // head(mouseX, mouseY);
+}
+```
+
+BIG IDEA OF CS alert: [Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
+
