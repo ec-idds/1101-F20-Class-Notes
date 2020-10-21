@@ -39,8 +39,12 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Odd and Even](#odd-and-even)
    * [Monday 19 October](#monday-19-october)
       * [Functions: theory and practice](#functions-theory-and-practice)
+   * [Wednesday 21 October](#wednesday-21-october)
+      * [Reviewing Our "Stack"](#reviewing-our-stack)
+      * [Events](#events)
+      * [Typing Into An Array](#typing-into-an-array)
 
-<!-- Added by: shermanm, at: Mon Oct 19 15:01:48 EDT 2020 -->
+<!-- Added by: shermanm, at: Wed Oct 21 14:49:53 EDT 2020 -->
 
 <!--te-->
 
@@ -721,3 +725,64 @@ function draw() {
 
 BIG IDEA OF CS alert: [Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
 
+# Wednesday 21 October
+## Reviewing Our "Stack"
+[A stack is pieces of software that build on each other](2020-10-21/Whiteboard[1]-01.png)
+
+## Events
+[Events vs. Checking State](2020-10-21/Whiteboard[2]-01.png)
+
+[What's wrong with just checking state?](2020-10-21/Screenshot[1].png)
+
+```javascript
+let clickCount = 0;
+let lastKey = '';
+
+function setup() {
+  createCanvas(400, 400);
+  textSize(60);
+}
+
+function draw() {
+  background(220);
+  
+  text(lastKey, 200, 200);
+}
+
+function keyTyped(){
+  lastKey = key;
+}
+```
+
+[p5.js execution order now includes Event Handlers](2020-10-21/Screenshot[2].png)
+
+[Mouse events available to us from p5](2020-10-21/Whiteboard[4]-01.png)
+
+## Typing Into An Array
+
+What does `letters.length - 1` mean?
+
+What does `letters[letters.length - 1]` return?
+
+[gets the last element of the array](2020-10-21/Screenshot[3].png)
+
+```javascript
+let letters = ['']; //not quite empty, but that's to prevent it from crashing before you type anything
+
+function setup() {
+  createCanvas(400, 400);
+  textSize(60);
+}
+
+function draw() {
+  background(220);
+  for(let i = 0; i < letters.length; i++){
+    text(letters[i], i * 40, 200);
+  }
+}
+
+function keyTyped(){
+  letters.push(key);
+  print(letters);
+}
+```
