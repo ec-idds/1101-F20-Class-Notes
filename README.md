@@ -45,8 +45,9 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Typing Into An Array](#typing-into-an-array)
    * [Monday 26 October](#monday-26-october)
       * [How To Move the Heavens](#how-to-move-the-heavens)
+   * [Wednesday 28 October](#wednesday-28-october)
 
-<!-- Added by: shermanm, at: Wed Oct 28 12:34:18 EDT 2020 -->
+<!-- Added by: shermanm, at: Wed Oct 28 12:41:43 EDT 2020 -->
 
 <!--te-->
 
@@ -803,3 +804,7 @@ Cam informs us that ["Big Bootie Mix, Vol. 18"](https://www.youtube.com/watch?v=
 [What it means to "move" the stars](2020-10-26/Screenshot[1].png)
 
 [You're welcome!](2020-10-26/Screen Shot 2020-10-26 at 2.14.11 PM.png[30].png)
+
+# Wednesday 28 October
+
+[Starter Code](2020-10-28/starter.js)
