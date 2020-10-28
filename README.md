@@ -43,8 +43,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Reviewing Our "Stack"](#reviewing-our-stack)
       * [Events](#events)
       * [Typing Into An Array](#typing-into-an-array)
+   * [Monday 26 October](#monday-26-october)
+      * [How To Move the Heavens](#how-to-move-the-heavens)
 
-<!-- Added by: shermanm, at: Wed Oct 21 14:49:53 EDT 2020 -->
+<!-- Added by: shermanm, at: Wed Oct 28 12:34:18 EDT 2020 -->
 
 <!--te-->
 
@@ -786,3 +788,18 @@ function keyTyped(){
   print(letters);
 }
 ```
+
+# Monday 26 October
+Cam informs us that ["Big Bootie Mix, Vol. 18"](https://www.youtube.com/watch?v=TPP6OF3Fz4A) has dropped, for all of our emotional fulfillment.
+
+## How To Move the Heavens
+
+[What the arrays are for](2020-10-26/Whiteboard[1]-01.png)
+
+[What the arrays are for - continued](2020-10-26/Whiteboard[2]-01.png)
+
+[Loop over the arrays](2020-10-26/Whiteboard[6]-01.png)
+
+[What it means to "move" the stars](2020-10-26/Screenshot[1].png)
+
+[You're welcome!](2020-10-26/Screen Shot 2020-10-26 at 2.14.11 PM.png[30].png)
