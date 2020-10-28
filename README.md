@@ -46,8 +46,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
    * [Monday 26 October](#monday-26-october)
       * [How To Move the Heavens](#how-to-move-the-heavens)
    * [Wednesday 28 October](#wednesday-28-october)
+      * [Old-School Practice with Arrays](#old-school-practice-with-arrays)
+      * [Sidenote: Rounding Error](#sidenote-rounding-error)
 
-<!-- Added by: shermanm, at: Wed Oct 28 12:41:43 EDT 2020 -->
+<!-- Added by: shermanm, at: Wed Oct 28 15:00:48 EDT 2020 -->
 
 <!--te-->
 
@@ -808,3 +810,68 @@ Cam informs us that ["Big Bootie Mix, Vol. 18"](https://www.youtube.com/watch?v=
 # Wednesday 28 October
 
 [Starter Code](2020-10-28/starter.js)
+
+## Old-School Practice with Arrays
+
+The big idea is to deeply think about how loops work with arrays. 
+
+When the loop runs, if it was set up with an interator that goes fro 0 to array.length, you will be able to access each element of the array, in turn, one at a time. Each repeat of the body of the loop will have a different value of *i* (the iterator), so the `array[i]` will get at a different value each time. Use `array[i]` to access each element in turn. (using the proper name of the array, of course)
+
+In the case of summing, all we have to do is add that value to a sum variable each iteration.
+
+MISSION 1
+
+```javascript
+function setup() {
+  let numbers = [85, 65, 99, 27, 24,  81, 91, 99, 61, 69, 22, 36];
+  for(let i = 0; i < random(50, 150); i++){
+    numbers.push(random(0,100));
+  }
+  
+  // Student Code Starts Here
+  
+  // print out a SUM of all  the numbers in the array
+}
+```
+
+MISSION 2
+
+```javascript
+let howMany = 20;
+
+function setup() {
+  let numbers = [];
+  
+  // Student Code Starts Here
+  
+  // you are going to fill numbers with the values from 1 to howMany
+  // print that array so you know it's right
+  // then print the sum of that array.
+
+}
+```
+
+MISSION 3
+
+```javascript
+let howMany = 20;
+
+function setup() {
+  let numbers = [];
+  for(let i = 0; i < howMany; i++){
+    numbers.push(random(-10,10));
+  }
+  
+  // Student Code Starts Here
+  
+  // print the array (so we can check it)
+  print(numbers);
+  
+  // print out a SUM of all the POSITIVE numbers in the array
+}
+```
+
+## Sidenote: Rounding Error
+[Float Rounding Error](2020-10-28/Screenshot[1].png)
+
+In javascript, all numbers are encoded as "floating point." There's a small issue with floating point numbers, which is that math with decimals, specifically division, can sometimes create rounding error. If you expect a number like `63.25` and what you see is `63.2500000000001` or `63.2499999999999999` then you've found some rounding error. It's part of life. There are ways to mitigate the effects, depending on what you're trying to do. One answer is to use the `round()` function, but again, it depends on what's going on in your program. It probably won't even matter! Just making you aware in case you  see this.
