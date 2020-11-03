@@ -48,8 +48,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
    * [Wednesday 28 October](#wednesday-28-october)
       * [Old-School Practice with Arrays](#old-school-practice-with-arrays)
       * [Sidenote: Rounding Error](#sidenote-rounding-error)
+   * [Monday 2 November](#monday-2-november)
+      * [Introducing Objects](#introducing-objects)
 
-<!-- Added by: shermanm, at: Wed Oct 28 15:00:48 EDT 2020 -->
+<!-- Added by: shermanm, at: Mon Nov  2 21:25:23 EST 2020 -->
 
 <!--te-->
 
@@ -874,4 +876,76 @@ function setup() {
 ## Sidenote: Rounding Error
 [Float Rounding Error](2020-10-28/Screenshot[1].png)
 
-In javascript, all numbers are encoded as "floating point." There's a small issue with floating point numbers, which is that math with decimals, specifically division, can sometimes create rounding error. If you expect a number like `63.25` and what you see is `63.2500000000001` or `63.2499999999999999` then you've found some rounding error. It's part of life. There are ways to mitigate the effects, depending on what you're trying to do. One answer is to use the `round()` function, but again, it depends on what's going on in your program. It probably won't even matter! Just making you aware in case you  see this.
+In javascript, all numbers are encoded as "floating point." There's a small issue with floating point numbers, which is that math with decimals, *specifically division*, can sometimes create rounding error. If you expect a number like `63.25` and what you see is `63.2500000000001` or `63.2499999999999999` then you've found some rounding error. It's part of life. There are ways to mitigate the effects, depending on what you're trying to do. One answer is to use the `round()` function, but again, it depends on what's going on in your program. It probably won't even matter! Just making you aware in case you  see this.
+
+# Monday 2 November
+## Introducing Objects
+[New structure: Objects](2020-11-02/Whiteboard[1]-01.png)
+
+[Refactored *Moving The Heavens* to use Objects for stars](2020-11-02/Whiteboard[2]-01.png)
+
+[How To Write an Object](2020-11-02/Whiteboard[3]-01.png)
+
+Our code is getting quite *expressive,* conveying much meaning in a small amount of text. See [this example, from *Move The Heavens*](2020-11-02/Screenshot[1].png)
+
+The expression `stars[n].x` means "the value of property x inside the object stored in element n of the array *stars*." That's a new level of conciseness for us, with many levels of abstraction built-in, but it's also powerful. So much instruction and abstraction so elegantly represented. 
+
+Of course, with that expression, it's result is an object propery, which we can do whatever we want to in the same way we could a variable. Read it, assign to it, re-assign it, [increment it](2020-11-02/Screenshot[2].png), whatever!
+
+Then we started with our new friend the Jitterbug. The end of our first day with them:
+
+```javascript
+// Jitterbug!
+
+let bug = {
+  x: 0,
+  y: 0,
+  color: "pink",
+  speed: 1
+};
+
+let bug2 = {  // in each object
+  x: 0,        // is the STATE of the bug
+  y: 0,
+  color: "green",
+  speed: 2
+};
+
+let tina = {
+  x: 0,
+  y: 0,
+  color: "red",
+  speed: 1.5
+};
+
+function setup() {
+  createCanvas(400, 400);
+  background(220);
+  // noStroke();
+  stroke(150);
+  
+  initializeBug(bug);
+  initializeBug(bug2);
+  initializeBug(tina);
+}
+
+function initializeBug(bug) {
+  bug.x = width / 2;
+  bug.y = height / 2;
+}
+
+function drawBug(bug){
+  fill(bug.color);
+  
+  bug.x += random(-bug.speed, bug.speed);
+  bug.y += random(-bug.speed, bug.speed);
+  
+  ellipse(bug.x, bug.y, 10);
+}
+
+function draw() {
+  drawBug(bug);
+  drawBug(bug2);
+  drawBug(tina);
+}
+```
