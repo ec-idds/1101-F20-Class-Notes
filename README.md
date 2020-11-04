@@ -50,8 +50,11 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Sidenote: Rounding Error](#sidenote-rounding-error)
    * [Monday 2 November](#monday-2-november)
       * [Introducing Objects](#introducing-objects)
+   * [Wednesday 4 November](#wednesday-4-november)
+      * [Objects as sprites](#objects-as-sprites)
+      * [Going inside an object](#going-inside-an-object)
 
-<!-- Added by: shermanm, at: Mon Nov  2 21:25:23 EST 2020 -->
+<!-- Added by: shermanm, at: Wed Nov  4 15:03:14 EST 2020 -->
 
 <!--te-->
 
@@ -949,3 +952,59 @@ function draw() {
   drawBug(tina);
 }
 ```
+
+# Wednesday 4 November
+## Objects as sprites
+A 'sprite' is a single entity on screen. The word comes from mythology, meaning a small fairy. A graphics sprite can move as a unit, change shape or size or color, or anythig else the programmer wants. The original Super Mario World, Pokémon, and Sonic the Hedgehog are great examples of sprite-based games.
+
+The idea of the sprite can help us. Using objects, we can create logical units that represent an entity on the screen- a sprite. The object behind the sprite can hold all the information needed for that particular sprite, and they can safely interact with each other because their data is separated. We practiced that today.
+
+## Going inside an object
+You can access any property inside of an object using the dot operator. If you have an object named `boo` and it has a property called `color`, you can access it as `boo.color` and treat it like a usual variable. Read it, update it, whatever.
+
+When you're inside a an object, you should use the keyword `this` to refer to the object that you're in. An example is below, in the `drawMe` property of `boo`: you'll see `this.x` and `this.y` among others. This code is saying "in THIS object, the one we're in right now, use the property x." This is the correct way to reference a property when you're inside the object itself, because you won't always know its name. 
+
+Boo starter code:
+
+```javascript
+// meet Boo!
+// Boo is an object that represents a sprite. It has the following properties:
+// .x
+// .y
+// .w
+// .h
+// .drawMe() <- they have their own draw function! it takes no arguments.
+
+let boo = {
+  x: 200,
+  y: 200,
+  w: 15,
+  h: 15,
+  drawMe: function () {rect(this.x, this.y, this.w, this.h);}
+}
+
+function setup() {
+  createCanvas(400, 400);
+  rectMode(CENTER)
+}
+
+function draw() {
+  background(220);
+  boo.drawMe();
+}
+
+// Task1 : make the sprite move with the arrow keys
+// Task2 : give the sprite a fill and stroke color - use those colors in boo's draw function
+// Task3 : copy boo to make bee, and give it DIFFERENT colors and a different SHAPE 
+//  (but keep all of its "interfaces" the same- x, y, w, h, draw)
+```
+
+Once those tasks were complete and reviewed, here were next tasks:
+
+```javascript
+// Task4: make bee move with WASD w up; a left; s down; d right
+// Task5: make bee "float" - move a little bit even when no keys are press
+// Task6: make the space bar change the color of boo
+```
+
+My favorite pokémon is Kadabra. Blastoise is a close second.
