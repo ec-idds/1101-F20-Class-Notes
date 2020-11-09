@@ -53,8 +53,9 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
    * [Wednesday 4 November](#wednesday-4-november)
       * [Objects as sprites](#objects-as-sprites)
       * [Going inside an object](#going-inside-an-object)
+   * [Monday 9 November](#monday-9-november)
 
-<!-- Added by: shermanm, at: Wed Nov  4 15:03:14 EST 2020 -->
+<!-- Added by: shermanm, at: Mon Nov  9 16:13:42 EST 2020 -->
 
 <!--te-->
 
@@ -1008,3 +1009,93 @@ Once those tasks were complete and reviewed, here were next tasks:
 ```
 
 My favorite pokémon is Kadabra. Blastoise is a close second.
+
+# Monday 9 November
+
+At this point we're combining concepts. Here's a quick breakdown of all the ideas that were included in today's lesson:
+
+* objects
+	* creation by a literal
+	* accessing internals
+	* storing in a variable
+* functions
+	* parameters can be passed in
+	* parameters become readable values, like variables, inside the body of the function
+	* return value
+* arrrays
+	* length, and the `.length` property
+	* index operations using `[]`
+	* adding new elements with `.push()`
+	* replacing elements by updating value with the index operator `[]`
+* variables
+	* scope
+		* variables are accessible only in the scope in which they're *created*
+		* `let` is the tightest-scoping. Using `let` with a `for` loop means the variable will only exist in that loop
+		* `var` in a `for` loop will actually scope to the whole encoclsing function
+	* can store any single value
+	* an object or an array both qualify as "a single value"
+* expressions
+	* expressions are built out of smaller expressions
+	* can be combined and nested
+	* pull an expression apart into its pieces if you don't understand it
+	* example: `bugs[n].x` is a variable named `bugs` and a variable named `n`. `bugs` contains an array; `n` contains an integer. In that array, the element at position `n` is an object, which has a property named `x`. The value of that property `x` is what that expression would return. That property is also what would be updated if this expression is followed by an assignment operator. 
+
+For skills, we practiced how to "trace" a running program by following the code, running it slowly on paper so that we better understand it. Write out everything that's being put in memory (variables, arguments, etc) so that you can follow their changes over time as you trace.
+
+[Tracing one version of our jitterbug code](2020-11-09/Screenshot[1].png)
+	
+without further ado, the final Jitter Bug program:
+
+```javascript
+/************************************************************************
+ * This program further abstracts our jitter bug object:                *
+ * it creates bugs using the makeBug function,                          *
+ * stores them in an array (allowing an arbitrary number of them), and  *
+ * calls each bug's move function whenever draw() is called.            *
+ * As a bonus, it removed bugs once they leave the canvas and replaces  *
+ * that bug with a brand-new one.                                       *
+ * It also randomizes color and speed of new bugs.                      *
+ ************************************************************************/
+ 
+
+function makeBug(speed, color) {
+  var bug = {
+    x: width / 2,
+    y: height / 2,
+    move: function() {
+      this.x += random(-speed, speed);
+      this.y += random(-speed, speed);
+      fill(color);
+      ellipse(this.x, this.y, 5);
+    }
+  }
+  return bug;
+}
+
+let bugs = [];
+
+function setup() {
+  createCanvas(600, 600);
+  background(220);
+  noStroke();
+  
+  for(let i = 0; i < 500; i++){
+    let newColor = color(random(0, 255), random(0, 255), random(0, 255));
+    bugs.push(makeBug(random(0.5, 6), newColor));
+  }
+}
+
+function draw() {
+  for(let i = 0; i < bugs.length; i++){
+    let currentBug = bugs[i];
+    if(currentBug.x < 0 || currentBug.x > width || 
+       currentBug.y < 0 || currentBug.y > height){
+      print(currentBug.x, currentBug.y);
+      let newColor = color(random(0, 255), random(0, 255), random(0, 255));
+      currentBug = makeBug(random(0.5, 6), newColor);
+      bugs[i] = currentBug;
+    }
+    currentBug.move();
+  }
+}
+```
