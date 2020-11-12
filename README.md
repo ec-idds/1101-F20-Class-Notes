@@ -665,9 +665,7 @@ function setup() {
 
 ## Understanding nested function calls:
 
-* I accidentally had all of your faces in front of the screenshot, so I had to re-do it
-* [The first screenshot](2020-10-14/Screenshot2.png)
-* [The Re-Do](2020-10-14/Whiteboard03.png)
+![The Re-Do](2020-10-14/Whiteboard03.png)
 
 ## Odd and Even
 Modulus Operator
@@ -752,7 +750,9 @@ function draw() {
 }
 ```
 
-BIG IDEA OF CS alert: [Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
+BIG IDEA OF CS alert: Functions let you create custom tools!
+
+![Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
 
 # Wednesday 21 October
 ## Reviewing Our "Stack"
@@ -821,16 +821,25 @@ function keyTyped(){
 Cam informs us that ["Big Bootie Mix, Vol. 18"](https://www.youtube.com/watch?v=TPP6OF3Fz4A) has dropped, for all of our emotional fulfillment.
 
 ## How To Move the Heavens
+What the arrays are for
 
 ![What the arrays are for](2020-10-26/Whiteboard[1]-01.png)
 
+What the arrays are for - continued
+
 ![What the arrays are for - continued](2020-10-26/Whiteboard[2]-01.png)
+
+Loop over the arrays
 
 ![Loop over the arrays](2020-10-26/Whiteboard[6]-01.png)
 
+[What it means to "move" the stars
+
 ![What it means to "move" the stars](2020-10-26/Screenshot[1].png)
 
-![You're welcome!](2020-10-26/Screen Shot 2020-10-26 at 2.14.11 PM.png[30].png)
+![You're welcome!](2020-10-26/ScreenShot.png)
+
+You're welcome!
 
 # Wednesday 28 October
 
@@ -911,11 +920,14 @@ Refactored *Moving The Heavens* to use Objects for stars
 How To Write an Object
 ![How To Write an Object](2020-11-02/Whiteboard[3]-01.png)
 
-Our code is getting quite *expressive,* conveying much meaning in a small amount of text. See [this example, from *Move The Heavens*](2020-11-02/Screenshot[1].png)
+Our code is getting quite *expressive,* conveying much meaning in a small amount of text. See this example, from *Move The Heavens:*
+
+![this example, from *Move The Heavens*](2020-11-02/Screenshot[1].png)
 
 The expression `stars[n].x` means "the value of property x inside the object stored in element n of the array *stars*." That's a new level of conciseness for us, with many levels of abstraction built-in, but it's also powerful. So much instruction and abstraction so elegantly represented. 
 
-Of course, with that expression, it's result is an object propery, which we can do whatever we want to in the same way we could a variable. Read it, assign to it, re-assign it, [increment it](2020-11-02/Screenshot[2].png), whatever!
+Of course, with that expression, it's result is an object propery, which we can do whatever we want to in the same way we could a variable. Read it, assign to it, re-assign it, increment it (shown below), whatever!
+![increment it](2020-11-02/Screenshot[2].png)
 
 Then we started with our new friend the Jitterbug. The end of our first day with them:
 
