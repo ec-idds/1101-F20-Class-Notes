@@ -54,8 +54,11 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Objects as sprites](#objects-as-sprites)
       * [Going inside an object](#going-inside-an-object)
    * [Monday 9 November](#monday-9-november)
+   * [Wednesday 11 November](#wednesday-11-november)
+      * [Media (ch. 7)](#media-ch-7)
+      * [Linting](#linting)
 
-<!-- Added by: shermanm, at: Mon Nov  9 16:13:42 EST 2020 -->
+<!-- Added by: shermanm, at: Thu Nov 12 14:32:26 EST 2020 -->
 
 <!--te-->
 
@@ -1099,3 +1102,23 @@ function draw() {
   }
 }
 ```
+
+# Wednesday 11 November
+Introduced the next assignment: A8 Lunar Lander
+
+## Media (ch. 7)
+
+New p5-provided function called `preload`
+
+Like `setup` and `draw`, you define `preload` but you never call it. p5 calls it for you at the right time. The purpose of `preload` is to load all of your media assets, which can take some time and you don't want to screw your program up by starting it before all the media assets are ready. 
+
+The `preload` function runs once, before the `setup` function runs.
+
+![Preload runs before the Setup function](2020-11-11/Screenshot[1].png)
+
+## Linting
+We added a code-checking system. It is called a *linter,* or more formally, a *static analyzer.* It checks your code for issues, which include potential errors and bugs, bad form, and style. 
+
+I added linter functionality to the codio interface, as seen below. The linter outputs the line and column of the error, and a description of what the error is. 
+
+![Linter in action, with markup](2020-11-11/Screenshot[2].png)
