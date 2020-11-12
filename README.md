@@ -156,9 +156,9 @@ www.w3schools.com
 	
 	can resolve to a value
 
-[the p5 loop, setup and draw](2020-08-31/Whiteboard02.png)
+![the p5 loop, setup and draw](2020-08-31/Whiteboard02.png)
 
-[flow for IF and IF/ELSE](2020-08-31/Whiteboard03.png)
+![flow for IF and IF/ELSE](2020-08-31/Whiteboard03.png)
 	
 # September 2
 <https://integrity.mit.edu/handbook/writing-code>
@@ -184,7 +184,7 @@ www.w3schools.com
 	
 	!	not		![thing] ===> t/f (opposite of thing)
 	
-[Truth Tables for OR and AND](2020-09-02/Whiteboard04.png)
+![Truth Tables for OR and AND](2020-09-02/Whiteboard04.png)
 
 Logical Primitives:
 	true
@@ -265,15 +265,23 @@ Operator Precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 	
 ## Logic Practice
 
-Examples (whiteboard, click to see image):
+Examples:
 
-[`temp < 65 || raining === true`](2020-09-09/Whiteboard-2020-09-03-1.png)
+`temp < 65 || raining === true`
 
-[`true && false || true && true`](2020-09-09/Whiteboard-2020-09-03-2.png)
+![`temp < 65 || raining === true`](2020-09-09/Whiteboard-2020-09-03-1.png)
 
-[`dogs <= 2 === false || bikes > 1`](2020-09-09/Whiteboard-2020-09-03-3.png)
+`true && false || true && true`
 
-[`mouseX > width / 2 && mouseY < height / 2`](2020-09-09/Whiteboard-2020-09-03-4.png)
+![`true && false || true && true`](2020-09-09/Whiteboard-2020-09-03-2.png)
+
+`dogs <= 2 === false || bikes > 1`
+
+![`dogs <= 2 === false || bikes > 1`](2020-09-09/Whiteboard-2020-09-03-3.png)
+
+`mouseX > width / 2 && mouseY < height / 2`
+
+![`mouseX > width / 2 && mouseY < height / 2`](2020-09-09/Whiteboard-2020-09-03-4.png)
 
 # Monday 14 September 2020
 
@@ -481,17 +489,17 @@ THINGS DON'T GET WRITTEN LINEARLY
 # Monday 28 September
 Here's a bunch of whiteboards.
 
-[Whiteboard 1](2020-09-28/Whiteboard1.png)
+![Whiteboard 1](2020-09-28/Whiteboard1.png)
 
-[Whiteboard 2](2020-09-28/Whiteboard2.png)
+![Whiteboard 2](2020-09-28/Whiteboard2.png)
 
-[Whiteboard 3](2020-09-28/Whiteboard3.png)
+![Whiteboard 3](2020-09-28/Whiteboard3.png)
 
-[Whiteboard 4](2020-09-28/Whiteboard4.png)
+![Whiteboard 4](2020-09-28/Whiteboard4.png)
 
-[Whiteboard 5](2020-09-28/Whiteboard5.png)
+![Whiteboard 5](2020-09-28/Whiteboard5.png)
 
-[Whiteboard 6](2020-09-28/Whiteboard6.png)
+![Whiteboard 6](2020-09-28/Whiteboard6.png)
 
 # Wednesday 30 September
 We worked in groups on Loop Exercises. Here it is, all cleaned up. 
@@ -506,11 +514,11 @@ Reviewed homeworks:
 
 Whiteboard:
 
-[Falling Rock Jet Pack 1](2020-10-05/Whiteboard1.png)
+![Falling Rock Jet Pack 1](2020-10-05/Whiteboard1.png)
 
-[Falling Rock Jet Pack 2](2020-10-05/Whiteboard3.png)
+![Falling Rock Jet Pack 2](2020-10-05/Whiteboard3.png)
 
-[with the offset for Emoji Wars](2020-10-05/Whiteboard4.png)
+![with the offset for Emoji Wars](2020-10-05/Whiteboard4.png)
 
 
 Started Task 4 from the above Loop Exercises. Here's the new trick (which we'll expand on Wednesday): 
@@ -541,11 +549,17 @@ Some tricks to nested loops:
 
 - When we enter the body of the outer loop a second (or subsequent) time, the inner loop is like a NEW loop to the computer, and it starts over with the initialization/setup expression, which usually sets its counter back to zero. Then it runs in its entirety again. 
 
-[Tracing the Single loop](2020-10-07/Whiteboard1.png)
+Tracing the Single loop
 
-[Tracing the Double loop](2020-10-07/Whiteboard2.png)
+![Tracing the Single loop](2020-10-07/Whiteboard1.png)
 
-[Trying to make the middle circle not print (doesn't quite work)](2020-10-07/Whiteboard3.png)
+Tracing the Double loop
+
+![Tracing the Double loop](2020-10-07/Whiteboard2.png)
+
+Trying to make the middle circle not print (doesn't quite work)
+
+![Trying to make the middle circle not print (doesn't quite work)](2020-10-07/Whiteboard3.png)
 
 ```javascript
 function setup() {
@@ -572,9 +586,9 @@ Reviewed the Falling Rock jetpacks, Emoji Wars, and Pinwheels.
 
 The most critical pieces are on these two slides:
 
-[Introduction to Arrays](2020-10-12/Whiteboard1.png)
+![Introduction to Arrays](2020-10-12/Whiteboard1.png)
 
-[Cool things about arrays](2020-10-12/Whiteboard2.png)
+![Cool things about arrays](2020-10-12/Whiteboard2.png)
 
 We started trying these ideas with the following example, that rotates colors whenever the mouse is clicked. (I tweaked it a little bit after class to fix a bug)
 
@@ -610,7 +624,7 @@ for the language itself, javascript reference is here https://www.w3schools.com/
 
 ## Looping over Arrays
 
-[looping over an array](2020-10-14/Screenshot1.png)
+![looping over an array](2020-10-14/Screenshot1.png)
 
 ```javascript
 let myArray = ['red', 'green', 'blue', 'pink', 'yellow'];
@@ -626,9 +640,9 @@ function setup() {
 }
 ```
 
-[arrays are mutable](2020-10-14/Whiteboard01.png)
+![arrays are mutable](2020-10-14/Whiteboard01.png)
 
-[arrays are expandable](2020-10-14/Whiteboard02.png)
+![arrays are expandable](2020-10-14/Whiteboard02.png)
 
 ```javascript
 let myArray = [];
@@ -651,25 +665,24 @@ function setup() {
 
 ## Understanding nested function calls:
 
-* I accidentally had all of your faces in front of the screenshot, so I had to re-do it
-* [The first screenshot](2020-10-14/Screenshot2.png)
-* [The Re-Do](2020-10-14/Whiteboard03.png)
+![The Re-Do](2020-10-14/Whiteboard03.png)
 
 ## Odd and Even
+Modulus Operator
 
-[Introducing Modulus](2020-10-14/Whiteboard04.png)
+![Introducing Modulus](2020-10-14/Whiteboard04.png)
 
-[Even Detector Expression](2020-10-14/Whiteboard05.png)
+![Even Detector Expression](2020-10-14/Whiteboard05.png)
 
 # Monday 19 October
 
 ## Functions: theory and practice
 
-[One of our great abstractions](2020-10-19/Whiteboard[1]-01.png)
+![One of our great abstractions](2020-10-19/Whiteboard[1]-01.png)
 
-[Why write a function?](2020-10-19/Whiteboard[3]-01.png)
+![Why write a function?](2020-10-19/Whiteboard[3]-01.png)
 
-[Practical Function Advice](2020-10-19/Whiteboard[4]-01.png)
+![Practical Function Advice](2020-10-19/Whiteboard[4]-01.png)
 
 We *refactored* the first robot to use functions. We gave it two parameters: a location to center the head on as x and y, and a headColor. 
 We then added some sick color transformations based on the position of the mouse to show off how much control we now have over the head unit.
@@ -737,16 +750,18 @@ function draw() {
 }
 ```
 
-BIG IDEA OF CS alert: [Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
+BIG IDEA OF CS alert: Functions let you create custom tools!
+
+![Functions let you create custom tools!](2020-10-19/Whiteboard[7]-01.png)
 
 # Wednesday 21 October
 ## Reviewing Our "Stack"
-[A stack is pieces of software that build on each other](2020-10-21/Whiteboard[1]-01.png)
+![A stack is pieces of software that build on each other](2020-10-21/Whiteboard[1]-01.png)
 
 ## Events
-[Events vs. Checking State](2020-10-21/Whiteboard[2]-01.png)
+![Events vs. Checking State](2020-10-21/Whiteboard[2]-01.png)
 
-[What's wrong with just checking state?](2020-10-21/Screenshot[1].png)
+![What's wrong with just checking state?](2020-10-21/Screenshot[1].png)
 
 ```javascript
 let clickCount = 0;
@@ -767,10 +782,11 @@ function keyTyped(){
   lastKey = key;
 }
 ```
+Event Handlers
 
-[p5.js execution order now includes Event Handlers](2020-10-21/Screenshot[2].png)
+![p5.js execution order now includes Event Handlers](2020-10-21/Screenshot[2].png)
 
-[Mouse events available to us from p5](2020-10-21/Whiteboard[4]-01.png)
+![Mouse events available to us from p5](2020-10-21/Whiteboard[4]-01.png)
 
 ## Typing Into An Array
 
@@ -778,7 +794,7 @@ What does `letters.length - 1` mean?
 
 What does `letters[letters.length - 1]` return?
 
-[gets the last element of the array](2020-10-21/Screenshot[3].png)
+![gets the last element of the array](2020-10-21/Screenshot[3].png)
 
 ```javascript
 let letters = ['']; //not quite empty, but that's to prevent it from crashing before you type anything
@@ -805,16 +821,25 @@ function keyTyped(){
 Cam informs us that ["Big Bootie Mix, Vol. 18"](https://www.youtube.com/watch?v=TPP6OF3Fz4A) has dropped, for all of our emotional fulfillment.
 
 ## How To Move the Heavens
+What the arrays are for
 
-[What the arrays are for](2020-10-26/Whiteboard[1]-01.png)
+![What the arrays are for](2020-10-26/Whiteboard[1]-01.png)
 
-[What the arrays are for - continued](2020-10-26/Whiteboard[2]-01.png)
+What the arrays are for - continued
 
-[Loop over the arrays](2020-10-26/Whiteboard[6]-01.png)
+![What the arrays are for - continued](2020-10-26/Whiteboard[2]-01.png)
 
-[What it means to "move" the stars](2020-10-26/Screenshot[1].png)
+Loop over the arrays
 
-[You're welcome!](2020-10-26/Screen Shot 2020-10-26 at 2.14.11 PM.png[30].png)
+![Loop over the arrays](2020-10-26/Whiteboard[6]-01.png)
+
+[What it means to "move" the stars
+
+![What it means to "move" the stars](2020-10-26/Screenshot[1].png)
+
+![You're welcome!](2020-10-26/ScreenShot.png)
+
+You're welcome!
 
 # Wednesday 28 October
 
@@ -881,23 +906,28 @@ function setup() {
 ```
 
 ## Sidenote: Rounding Error
-[Float Rounding Error](2020-10-28/Screenshot[1].png)
+![Float Rounding Error](2020-10-28/Screenshot[1].png)
 
 In javascript, all numbers are encoded as "floating point." There's a small issue with floating point numbers, which is that math with decimals, *specifically division*, can sometimes create rounding error. If you expect a number like `63.25` and what you see is `63.2500000000001` or `63.2499999999999999` then you've found some rounding error. It's part of life. There are ways to mitigate the effects, depending on what you're trying to do. One answer is to use the `round()` function, but again, it depends on what's going on in your program. It probably won't even matter! Just making you aware in case you  see this.
 
 # Monday 2 November
 ## Introducing Objects
-[New structure: Objects](2020-11-02/Whiteboard[1]-01.png)
+![New structure: Objects](2020-11-02/Whiteboard[1]-01.png)
 
-[Refactored *Moving The Heavens* to use Objects for stars](2020-11-02/Whiteboard[2]-01.png)
+Refactored *Moving The Heavens* to use Objects for stars
+![Refactored *Moving The Heavens* to use Objects for stars](2020-11-02/Whiteboard[2]-01.png)
 
-[How To Write an Object](2020-11-02/Whiteboard[3]-01.png)
+How To Write an Object
+![How To Write an Object](2020-11-02/Whiteboard[3]-01.png)
 
-Our code is getting quite *expressive,* conveying much meaning in a small amount of text. See [this example, from *Move The Heavens*](2020-11-02/Screenshot[1].png)
+Our code is getting quite *expressive,* conveying much meaning in a small amount of text. See this example, from *Move The Heavens:*
+
+![this example, from *Move The Heavens*](2020-11-02/Screenshot[1].png)
 
 The expression `stars[n].x` means "the value of property x inside the object stored in element n of the array *stars*." That's a new level of conciseness for us, with many levels of abstraction built-in, but it's also powerful. So much instruction and abstraction so elegantly represented. 
 
-Of course, with that expression, it's result is an object propery, which we can do whatever we want to in the same way we could a variable. Read it, assign to it, re-assign it, [increment it](2020-11-02/Screenshot[2].png), whatever!
+Of course, with that expression, it's result is an object propery, which we can do whatever we want to in the same way we could a variable. Read it, assign to it, re-assign it, increment it (shown below), whatever!
+![increment it](2020-11-02/Screenshot[2].png)
 
 Then we started with our new friend the Jitterbug. The end of our first day with them:
 
@@ -1045,7 +1075,7 @@ At this point we're combining concepts. Here's a quick breakdown of all the idea
 
 For skills, we practiced how to "trace" a running program by following the code, running it slowly on paper so that we better understand it. Write out everything that's being put in memory (variables, arguments, etc) so that you can follow their changes over time as you trace.
 
-[Tracing one version of our jitterbug code](2020-11-09/Screenshot[1].png)
+![Tracing one version of our jitterbug code](2020-11-09/Screenshot[1].png)
 	
 without further ado, the final Jitter Bug program:
 
