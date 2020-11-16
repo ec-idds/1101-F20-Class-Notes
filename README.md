@@ -57,8 +57,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
    * [Wednesday 11 November](#wednesday-11-november)
       * [Media (ch. 7)](#media-ch-7)
       * [Linting](#linting)
+   * [Monday 16 November](#monday-16-november)
+      * [Motion (Ch. 8) - Animation](#motion-ch-8---animation)
 
-<!-- Added by: shermanm, at: Thu Nov 12 14:32:26 EST 2020 -->
+<!-- Added by: shermanm, at: Mon Nov 16 15:53:14 EST 2020 -->
 
 <!--te-->
 
@@ -1152,3 +1154,11 @@ We added a code-checking system. It is called a *linter,* or more formally, a *s
 I added linter functionality to the codio interface, as seen below. The linter outputs the line and column of the error, and a description of what the error is. 
 
 ![Linter in action, with markup](2020-11-11/Screenshot[2].png)
+
+# Monday 16 November
+
+## Motion (Ch. 8) - Animation
+![whiteboard introducing chapter 8](2020-11-16/Whiteboard[1]-01.png)
+![whiteboard on "tweening"](2020-11-16/Whiteboard[2]-01.png)
+Ch. 8 example on timing, re-introducing the `millis` function and how it measures time. 
+![annotated code about millis](2020-11-16/Screenshot[1].png)
