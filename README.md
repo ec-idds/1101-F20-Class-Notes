@@ -59,8 +59,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Linting](#linting)
    * [Monday 16 November](#monday-16-november)
       * [Motion (Ch. 8) - Animation](#motion-ch-8---animation)
+   * [Tuesday 18 November](#tuesday-18-november)
+      * [Circular Motion](#circular-motion)
 
-<!-- Added by: shermanm, at: Mon Nov 16 15:53:14 EST 2020 -->
+<!-- Added by: shermanm, at: Wed Nov 18 15:54:05 EST 2020 -->
 
 <!--te-->
 
@@ -1162,3 +1164,21 @@ I added linter functionality to the codio interface, as seen below. The linter o
 ![whiteboard on "tweening"](2020-11-16/Whiteboard[2]-01.png)
 Ch. 8 example on timing, re-introducing the `millis` function and how it measures time. 
 ![annotated code about millis](2020-11-16/Screenshot[1].png)
+
+# Tuesday 18 November
+## Circular Motion
+Moving through Chapter 8, we talked about circular motion. This required a brush-up on our middle school trigonometry, specifically the `sin` and `cos` functions.
+![trig review](2020-11-18/Whiteboard[2]-01.png)
+Don't forget about radians!
+![how radians work](2020-11-18/Whiteboard[3]-01.png)
+
+Oh, no, I forgot an important thing!
+Radians are default in p5, but you can switch the modes using `angleMode(DEGREES)` or `angleMode(RADIANS)`
+
+Here's the collection of Ch.8 examples, including some of my improvised examples:
+
+[Ch.8 Motion on p5js.org](https://editor.p5js.org/marksherman/collections/qHStD7lz8)
+
+Trig functions, like `sin` can be used in any case where you want to generate a pulsing, periodic, set of values. 
+
+![using sin to make periodic pulsing](2020-11-18/Screenshot[1]-01.png)
