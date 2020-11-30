@@ -59,10 +59,13 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
       * [Linting](#linting)
    * [Monday 16 November](#monday-16-november)
       * [Motion (Ch. 8) - Animation](#motion-ch-8---animation)
-   * [Tuesday 18 November](#tuesday-18-november)
+   * [Wednesday 18 November](#wednesday-18-november)
       * [Circular Motion](#circular-motion)
+   * [Monday 30 November](#monday-30-november)
+      * [HTML, CSS,  JavaScript, and the DOM](#html-css--javascript-and-the-dom)
+         * [Example p5.js app that doesn't use the canvas](#example-p5js-app-that-doesnt-use-the-canvas)
 
-<!-- Added by: shermanm, at: Wed Nov 18 15:54:05 EST 2020 -->
+<!-- Added by: shermanm, at: Mon Nov 30 15:48:21 EST 2020 -->
 
 <!--te-->
 
@@ -1165,7 +1168,7 @@ I added linter functionality to the codio interface, as seen below. The linter o
 Ch. 8 example on timing, re-introducing the `millis` function and how it measures time. 
 ![annotated code about millis](2020-11-16/Screenshot[1].png)
 
-# Tuesday 18 November
+# Wednesday 18 November
 ## Circular Motion
 Moving through Chapter 8, we talked about circular motion. This required a brush-up on our middle school trigonometry, specifically the `sin` and `cos` functions.
 ![trig review](2020-11-18/Whiteboard[2]-01.png)
@@ -1182,3 +1185,46 @@ Here's the collection of Ch.8 examples, including some of my improvised examples
 Trig functions, like `sin` can be used in any case where you want to generate a pulsing, periodic, set of values. 
 
 ![using sin to make periodic pulsing](2020-11-18/Screenshot[1]-01.png)
+
+# Monday 30 November
+## HTML, CSS,  JavaScript, and the DOM
+Learned about what web pages are made of, and how JavaScript fits in to the real world.
+
+[w3schools on HTML](https://www.w3schools.com/html/default.asp)
+
+![screenshot with markup of html, css, and javascript loaded into the browser from the server](2020-11-30/Screenshot[1]-01.png)
+
+HTML is basic text, with tags that "mark up" the text. Tags are in angle brackets `<tag>` and are usually paired: `<h1>`, `</h1>`
+
+![screenshot with markup of html tag pairs, and page header and body, and various tags demonstrated](2020-11-30/Screenshot[2]-01.png)
+
+Tags can have parameters, like `href` inside an `a` tag to make it into a link.
+
+![screenshot of simple web page with markup demonstrating an href tag parameter](2020-11-30/Screenshot[3]-01.png)
+
+CSS is used to style the page on top of the html content. 
+
+![screenshot of simple web page with markup showing that tags can ve formatted with CSS (but a poor example of it)](2020-11-30/Screenshot[4]-01.png)
+
+JavaScript then creates interactivity, reactiveness, and any other dynamic properties of a page.
+
+The big idea is the DOM: the Document Object Model. The browser creates the DOM in memory from the html and css. JavaScript can then access, read, and modify the DOM. The browser will display those changes instantly. 
+
+The first piece of javascript code you see in the [w3schools tutorial](https://www.w3schools.com/js/js_intro.asp) is this:
+
+`document.getElementById("demo").innerHTML = "Hello JavaScript";`
+
+That line is accessing the DOM via the global variable `document`, and using the `getElementById` function to find a particular piece of the html in the DOM and modify its contents. The result is the text in the browser changes.
+
+![screenshot of w3schools JavaScript tutorial web page with markup explaining the DOM, and the line of code that uses it to find and modify a particular HTML element.](2020-11-30/Screenshot[6]-01.png)
+
+![summary points](2020-11-30/Screenshot[7]-01.png)
+
+### Example p5.js app that doesn't use the canvas
+This project is interactive but has no canvas. It does all of its interaction through the DOM.
+
+demo: https://marksherman.dev/talk-timer-p5js/
+
+sketch file: https://github.com/marksherman/talk-timer-p5js/blob/master/sketch.js
+
+the whole project : https://github.com/marksherman/talk-timer-p5js
