@@ -64,8 +64,10 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
    * [Monday 30 November](#monday-30-november)
       * [HTML, CSS,  JavaScript, and the DOM](#html-css--javascript-and-the-dom)
          * [Example p5.js app that doesn't use the canvas](#example-p5js-app-that-doesnt-use-the-canvas)
+   * [Wednesday 2 December 2020 Last Class!](#wednesday-2-december-2020-last-class)
+      * [Using Media: Follow Copyright](#using-media-follow-copyright)
 
-<!-- Added by: shermanm, at: Mon Nov 30 15:48:21 EST 2020 -->
+<!-- Added by: shermanm, at: Sat Dec  5 21:21:42 EST 2020 -->
 
 <!--te-->
 
@@ -1228,3 +1230,18 @@ demo: https://marksherman.dev/talk-timer-p5js/
 sketch file: https://github.com/marksherman/talk-timer-p5js/blob/master/sketch.js
 
 the whole project : https://github.com/marksherman/talk-timer-p5js
+
+# Wednesday 2 December 2020 Last Class!
+## Using Media: Follow Copyright
+* Don't use any media that's under copyright
+* Look for Creative Commons license: creativecommons.org
+	* has an image search
+	* you can set google image search to filter for cc licenses
+	* DO WHAT THE LICENSE SAYS. If it says attribution, then you need to credit them, etc.
+	* A piece of media with no copyright defaults to You Can't Use It unless you contact the creator and they say yes.
+* Free High Quality Sounds: freesound.org
+	* requires an account, which is free
+	* files are typically super high-quality and enormous, so they may require conversion
+		* I recommend Audacity for sound editing/processing
+* Cool assets: https://itch.io/game-assets/assets-cc4-by/free
+* More cool assets:  https://opengameart.org/
